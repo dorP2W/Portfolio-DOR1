@@ -1,0 +1,38 @@
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #22c55e; /* green cursor */
+  width: 0;
+  animation:
+    typing 4s steps(30, end) forwards,
+    blink 0.7s infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #22c55e; }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@keyframes text-glitch {
+  0%, 100% { transform:scaleX(1) scaleY(1); opacity: 1; }
+  20% { transform: scaleY(3); opacity: 0.6;}
+  30% { transform: scaleY(0.2); }
+  40% { transform: scaleX(2); }
+  50% { transform: scaleX(0.3);opacity: 0.5; }
+  60% { transform: scaleY(4) skewX(5deg); }
+  70% { transform: scaleY(0.3) skewX(5deg); }
+  80% { transform: scaleX(2.5) skewX(-5deg); opacity: 0.8; }
+  80% { transform: scaleX(0.5) skewX(-5deg); opacity: 0.8; }
+}
+.glitching {
+  animation: text-glitch 0.3s linear;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
