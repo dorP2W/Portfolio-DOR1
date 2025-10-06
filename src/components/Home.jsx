@@ -39,7 +39,7 @@ console.log(glitchRefs.current)
 
 
   return (
-    <section id='about' className=" relative w-full h-screen">
+    <section id='about' className=" relative w-full  h-screen">
       {/* Background Image */}
       <img
         src={homePic}
@@ -53,8 +53,9 @@ console.log(glitchRefs.current)
         <p 
         key={key}
         onClick={() => setKey(prev => prev + 1)}
-        className="mt-6 cursor-pointer text-3xl md:text-2xl font-mono text-green-300 ">
-          <span className="typing-text select-none">
+        className="mt-18 cursor-pointer w-auto max-w-[680px] mx-auto
+         text-xl sm:text-2xl md:text-3xl font-mono text-green-300 ">
+          <span className="typing-text select-none sm:whitespace-nowrap">
             Access Granted... Welcome, Tester.
           </span>
         </p>
@@ -67,7 +68,7 @@ console.log(glitchRefs.current)
 
         <p className=" text-center text-2xl font-semibold w-2/3
              text-green-600 bg-black/60 px-4 py-2 rounded-lg
-             drop-shadow-[0_0_5px_rgba(34,197,94,0.8)]
+             drop-shadow-[0_0_5px_rgba(34,197,94,0.8)] select-none
              "
              >
           I’m <span className="inline-block" ref={addToRefs}>Dor</span>, a full-stack <span className="inline-block" ref={addToRefs}>developer</span> committed to building <span className="inline-block" ref={addToRefs}> clean</span>, effective 

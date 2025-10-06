@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div >
+      <div className=''>
         <Header/>
         <Home/>
         <Separator/>

@@ -34,7 +34,7 @@ const [timeoutId, setTimeoutId] = useState(null);
   }, [lastScrollY, timeoutId]);
 
   return (
-    <header className={`flex flex-row justify-between p-2 px-5 m-4 rounded-2xl
+    <header className={`flex flex-col sm:flex-row justify-between p-2 px-5 m-4 rounded-2xl
      bg-gradient-to-r from-black via-green-600 to-gray-600 
        w-3/4 items-center 
       fixed z-50 left-1/2 -translate-x-1/2  
@@ -43,8 +43,8 @@ const [timeoutId, setTimeoutId] = useState(null);
                     visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
                   }`}>
         <div className="text-2xl font-bold  tracking-wide
-        bg-gradient-to-r from-blue-500 via-green-500 to-gray-500 
-        bg-clip-text text-transparent drop-shadow-lg
+         text-amber-100 
+         drop-shadow-lg 
          hover:scale-110 transition-transform duration-300">Dor Golan</div>
         <div className='flex gap-3'>
         <a href="#about"
